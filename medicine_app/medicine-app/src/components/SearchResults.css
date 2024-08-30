@@ -1,0 +1,22 @@
+/* src/components/SearchResults.css */
+.search-results-container {
+    padding: 20px;
+    text-align: center;
+  }
+  
+  .search-results-header {
+    margin-bottom: 20px;
+  }
+  
+  .results-list {
+    list-style-type: none;
+    padding: 0;
+  }
+  
+  .result-item {
+    padding: 10px;
+    margin: 10px 0;
+    background-color: #f0f0f0;
+    border-radius: 5px;
+  }
+  
