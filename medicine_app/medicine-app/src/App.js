@@ -4,6 +4,8 @@ import NameSearch from './components/NameSearch';
 import SymptomsCheck from './components/SymptomsCheck';
 import SearchResults from './components/SearchResults';
 import './App.css';
+import Results from './components/Results';
+import MedicineInfo from './components/MedicineInfo';
 
 function Home() {
   return (
@@ -27,6 +29,8 @@ function App() {
         <Route path="/NameSearch" element={<NameSearch />} />
         <Route path="/SymptomsCheck" element={<SymptomsCheck />} />
         <Route path="/search-results" element={<SearchResults />} />
+        <Route path="/Results" element={<Results />} />
+        <Route path="/MedicineInfo" element={<MedicineInfo />} />
       </Routes>
     </Router>
   );
