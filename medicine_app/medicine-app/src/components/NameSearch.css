@@ -37,6 +37,7 @@
   font-size: 18px;
   width: 300px;
   margin-bottom: 20px;
+  margin-right: 10px;
   border-radius: 5px;
   border: 1px solid #ccc;
 }
@@ -66,7 +67,7 @@
 }
 
 .nav-button:hover {
-  background-color: #e0e0e0;
+  background-color: #9fd8f4;
   transform: translateY(-5px);
 }
 

@@ -12,7 +12,7 @@ function Results() {
 
   return (
     <div>
-      <h2>Your selected symptoms:</h2>
+      <h2>선택한 증상으로 검색한 결과입니다:</h2>
       <ul>
         {selectedSymptoms.map((symptom, index) => (
           <li

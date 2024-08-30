@@ -2,11 +2,17 @@
 .symptoms-check-container {
     padding: 20px;
   }
-  
-  .symptoms-check-header .home-button {
-    font-size: 20px;
+
+.home-button {
+    padding: 10px 20px;
+    font-size: 16px;
+    color: white;
+    background-color: #61dafb;
+    border: none;
+    border-radius: 5px;
     text-decoration: none;
-    color: black;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
   }
   
   .symptoms-check-main {

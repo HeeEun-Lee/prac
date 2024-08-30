@@ -18,7 +18,7 @@ function SearchResults() {
   return (
     <div className="search-results-container">
       <header className="search-results-header">
-        <h1>Search Results for "{query}"</h1>
+        <h1>다음 키워드로 검색한 결과입니다: "{query}"</h1>
       </header>
       <ul className="results-list">
         {results.map((result, index) => (

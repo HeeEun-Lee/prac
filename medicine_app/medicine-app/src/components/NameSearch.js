@@ -11,6 +11,10 @@ function NameSearch() {
     navigate(`/search-results?query=${searchTerm}`);
   };
 
+  const handleButtonClick = (medicineName) => {
+    navigate(`/medicine-info/${medicineName}`);
+  };
+
   return (
     <div className="name-search-container">
       <header className="name-search-header">
@@ -20,26 +24,26 @@ function NameSearch() {
         <form onSubmit={handleSearch}>
           <input
             type="text"
-            placeholder="Search..."
+            placeholder="약 이름을 입력하세요..."
             className="search-input"
             value={searchTerm}
             onChange={(e) => setSearchTerm(e.target.value)}
           />
-          <button type="submit" className="search-button">Search</button>
+          <button type="submit" className="search-button">검색</button>
         </form>
         <div className="button-group">
-          <Link to="/Shortcut1" className="nav-button">
-            <img src="image1-url.jpg" alt="Shortcut 1" className="button-image" />
-            Shortcut 1
-          </Link>
-          <Link to="/Shortcut2" className="nav-button">
-            <img src="image2-url.jpg" alt="Shortcut 2" className="button-image" />
-            Shortcut 2
-          </Link>
-          <Link to="/Shortcut3" className="nav-button">
-            <img src="image3-url.jpg" alt="Shortcut 3" className="button-image" />
-            Shortcut 3
-          </Link>
+          <button onClick={() => handleButtonClick('medicine1')} className="nav-button">
+            <img src="image1-url.jpg" alt="medicine 1" className="button-image" />
+            약 1
+          </button>
+          <button onClick={() => handleButtonClick('medicine2')} className="nav-button">
+            <img src="image2-url.jpg" alt="medicine 2" className="button-image" />
+            약 2
+          </button>
+          <button onClick={() => handleButtonClick('medicine3')} className="nav-button">
+            <img src="image3-url.jpg" alt="medicine 3" className="button-image" />
+            약 3
+          </button>
         </div>
       </main>
     </div>

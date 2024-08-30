@@ -25,7 +25,7 @@ function SymptomsCheck() {
         <Link to="/" className="home-button">Home</Link>
       </header>
       <main className="symptoms-check-main">
-        <h2>Select your symptoms:</h2>
+        <h2>증상을 선택하세요</h2>
         <div className="checkbox-group">
           <label>
             <input
